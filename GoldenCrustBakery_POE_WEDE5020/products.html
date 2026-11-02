@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore fresh bread, celebration cakes, cupcakes, pastries, cookies and beverages from Golden Crusts Bakery. Search and sort our product selection.">
+  <title>Bakery Products | Golden Crusts Bakery Pretoria</title>
+  <meta name="keywords" content="bakery products Pretoria, fresh bread, celebration cakes, cupcakes, pastries, cookies, beverages">
+  <meta name="author" content="Golden Crusts Bakery">
+  <meta name="theme-color" content="#6A0DAD">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">Golden Crusts Bakery</a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+    <label for="nav-toggle" class="nav-toggle" aria-label="Toggle menu">
+      <span class="icon-open">☰</span>
+      <span class="icon-close">✕</span>
+    </label>
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="about_us.html" >About Us</a></li>
+        <li><a href="products.html" aria-current="page">Products</a></li>
+        <li><a href="enquiries.html" >Enquiries</a></li>
+        <li><a href="contact.html" >Contact Us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main>
+
+<section class="page-header">
+  <div class="container">
+    <span class="eyebrow">Fresh from the bakery</span>
+    <h1>Our Products</h1>
+    <p>Browse a selection of Golden Crusts Bakery products. Use the enquiry page to ask about availability or custom orders.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="product-tools">
+      <div class="search-pill">
+        <label for="product-search" class="visually-hidden">Search products</label>
+        <span aria-hidden="true">⌕</span>
+        <input type="search" id="product-search" name="q" placeholder="Search products" aria-describedby="product-count">
+      </div>
+      <label class="sort-control" for="product-sort">Sort products
+        <select id="product-sort"><option value="default">Featured</option><option value="name">Name: A–Z</option><option value="price-low">Price: low to high</option><option value="price-high">Price: high to low</option></select>
+      </label>
+    </div>
+    <p id="product-count" class="result-count" aria-live="polite">Showing all products</p>
+
+    <div class="grid-4" id="product-grid">
+      <article class="product-card" data-price="25" data-name="Fresh Bread" data-product="fresh bread bread">
+        <div class="product-image"><button class="product-photo-button" type="button" data-lightbox="true" aria-label="View product photograph"><img src="https://images.pexels.com/photos/18656839/pexels-photo-18656839.jpeg?auto=compress&cs=srgb&fm=jpg&w=1500&h=1500&fit=crop" alt="Fresh bread"></button><a href="enquiries.html?product=Fresh%20Bread" class="add-cart">Enquire</a></div>
+        <div class="product-card-body"><h3>Fresh Bread</h3><div class="product-meta"><span>Loaf</span><span>From R25</span></div></div>
+      </article>
+      <article class="product-card" data-price="350" data-name="Celebration Cake" data-product="celebration cake custom cake">
+        <div class="product-image"><button class="product-photo-button" type="button" data-lightbox="true" aria-label="View product photograph"><img src="https://images.pexels.com/photos/31922897/pexels-photo-31922897.jpeg?auto=compress&cs=srgb&fm=jpg&w=1500&h=1500&fit=crop" alt="Celebration cake"></button><a href="enquiries.html?product=Celebration%20Cake" class="add-cart">Enquire</a></div>
+        <div class="product-card-body"><h3>Celebration Cake</h3><div class="product-meta"><span>Custom</span><span>From R350</span></div></div>
+      </article>
+      <article class="product-card" data-price="90" data-name="Cupcakes" data-product="cupcakes cupcake">
+        <div class="product-image"><button class="product-photo-button" type="button" data-lightbox="true" aria-label="View product photograph"><img src="https://images.pexels.com/photos/853004/pexels-photo-853004.jpeg?auto=compress&cs=srgb&fm=jpg&w=1500&h=1500&fit=crop" alt="Cupcakes"></button><a href="enquiries.html?product=Cupcakes" class="add-cart">Enquire</a></div>
+        <div class="product-card-body"><h3>Cupcakes</h3><div class="product-meta"><span>Box of 6</span><span>From R90</span></div></div>
+      </article>
+      <article class="product-card" data-price="30" data-name="Pastries" data-product="pastries pastry">
+        <div class="product-image"><button class="product-photo-button" type="button" data-lightbox="true" aria-label="View product photograph"><img src="https://images.pexels.com/photos/4946407/pexels-photo-4946407.jpeg?auto=compress&cs=srgb&fm=jpg&w=1500&h=1500&fit=crop" alt="Fresh pastries"></button><a href="enquiries.html?product=Pastries" class="add-cart">Enquire</a></div>
+        <div class="product-card-body"><h3>Pastries</h3><div class="product-meta"><span>Selection</span><span>From R30</span></div></div>
+      </article>
+      <article class="product-card" data-price="70" data-name="Cookies" data-product="cookies cookie">
+        <div class="product-image"><button class="product-photo-button" type="button" data-lightbox="true" aria-label="View product photograph"><img src="https://images.pexels.com/photos/39353245/pexels-photo-39353245.jpeg?auto=compress&cs=srgb&fm=jpg&w=1500&h=1500&fit=crop" alt="Cookies"></button><a href="enquiries.html?product=Cookies" class="add-cart">Enquire</a></div>
+        <div class="product-card-body"><h3>Cookies</h3><div class="product-meta"><span>Box</span><span>From R70</span></div></div>
+      </article>
+      <article class="product-card" data-price="25" data-name="Beverages" data-product="beverages drinks">
+        <div class="product-image"><button class="product-photo-button" type="button" data-lightbox="true" aria-label="View product photograph"><img src="https://images.pexels.com/photos/4946407/pexels-photo-4946407.jpeg?auto=compress&cs=srgb&fm=jpg&w=1500&h=1500&fit=crop" alt="Beverages"></button><a href="enquiries.html?product=Beverages" class="add-cart">Enquire</a></div>
+        <div class="product-card-body"><h3>Beverages</h3><div class="product-meta"><span>Various</span><span>From R25</span></div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-col">
+      <p class="logo">Golden Crusts Bakery</p>
+      <ul class="icon-list">
+        <li><span>☎</span><a href="tel:+27123456789">+27 12 345 6789</a></li>
+        <li><span>✉</span><a href="mailto:info@goldencrustbakery.co.za">info@goldencrustbakery.co.za</a></li>
+        <li><span>⌖</span><span>Pretoria, Gauteng, South Africa</span></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Follow Golden Crusts</h4>
+      <p class="social-note">Social profile links will be added when official account URLs are supplied.</p>
+    </div>
+  </div>
+  <p class="copyright">&copy; 2026 Golden Crusts Bakery. All rights reserved.</p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

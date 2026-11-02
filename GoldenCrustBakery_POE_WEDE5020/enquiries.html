@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Send Golden Crusts Bakery an enquiry about custom cakes, product availability, orders or general questions.">
+  <title>Orders and Enquiries | Golden Crusts Bakery</title>
+  <meta name="keywords" content="bakery orders Pretoria, custom cake enquiry, bakery product enquiry, Golden Crusts Bakery">
+  <meta name="author" content="Golden Crusts Bakery">
+  <meta name="theme-color" content="#6A0DAD">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">Golden Crusts Bakery</a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+    <label for="nav-toggle" class="nav-toggle" aria-label="Toggle menu">
+      <span class="icon-open">☰</span>
+      <span class="icon-close">✕</span>
+    </label>
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="about_us.html" >About Us</a></li>
+        <li><a href="products.html" >Products</a></li>
+        <li><a href="enquiries.html" aria-current="page">Enquiries</a></li>
+        <li><a href="contact.html" >Contact Us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main>
+
+<section class="page-header">
+  <div class="container">
+    <span class="eyebrow">We would love to hear from you</span>
+    <h1>Enquiries & Orders</h1>
+    <p>Use the form for custom cake orders, product questions or general enquiries.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="form-layout">
+      <div class="form-card">
+        <h2>Send an enquiry</h2>
+        <form id="enquiry-form" action="#" method="post">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" autocomplete="name" minlength="2" maxlength="80" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" autocomplete="email" maxlength="120" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label for="phone">Phone number</label><input type="tel" id="phone" name="phone" autocomplete="tel" pattern="[0-9+()\s-]{7,20}" title="Enter a valid phone number (7 to 20 characters)." required></div>
+            <div class="form-group"><label for="event-date">Required date (if applicable)</label><input type="date" id="event-date" name="eventDate"></div>
+          </div>
+          <div class="form-group">
+            <label for="type">Enquiry Type</label>
+            <select id="type" name="type" required>
+              <option value="">Please select</option>
+              <option>Custom cake order</option>
+              <option>Product enquiry</option>
+              <option>General question</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" minlength="10" maxlength="1200" placeholder="Tell us what you need..." required></textarea>
+            <small class="field-hint">Please include cake size, flavour, collection date and design details where relevant.</small>
+          </div>
+          <button type="submit" class="btn btn-success btn-block">Prepare Enquiry Email</button>
+          <p class="form-note">After validation, your email application will open with the enquiry details ready to send. This static website does not store or transmit form submissions to a server.</p>
+          <p id="enquiry-status" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+
+      <div class="info-card">
+        <h2>Order information</h2>
+        <p>For custom celebration cakes, include the date, preferred flavour, size and any design details in your message.</p>
+        <ul class="icon-list">
+          <li><span>☎</span><a href="tel:+27123456789">+27 12 345 6789</a></li>
+          <li><span>✉</span><a href="mailto:info@goldencrustbakery.co.za">info@goldencrustbakery.co.za</a></li>
+          <li><span>⌖</span><span>Pretoria, Gauteng</span></li>
+        </ul>
+        <a class="btn btn-secondary" href="https://wa.me/27123456789">WhatsApp Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-col">
+      <p class="logo">Golden Crusts Bakery</p>
+      <ul class="icon-list">
+        <li><span>☎</span><a href="tel:+27123456789">+27 12 345 6789</a></li>
+        <li><span>✉</span><a href="mailto:info@goldencrustbakery.co.za">info@goldencrustbakery.co.za</a></li>
+        <li><span>⌖</span><span>Pretoria, Gauteng, South Africa</span></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Follow Golden Crusts</h4>
+      <p class="social-note">Social profile links will be added when official account URLs are supplied.</p>
+    </div>
+  </div>
+  <p class="copyright">&copy; 2026 Golden Crusts Bakery. All rights reserved.</p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
